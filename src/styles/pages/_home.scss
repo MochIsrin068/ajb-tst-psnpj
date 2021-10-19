@@ -1,0 +1,38 @@
+.home{
+    padding: 16px;
+    width: 80%;
+    background-color: #fff;
+    height: 84vh;
+    
+    overflow-y: scroll;
+
+    @include phone{
+        width: 100%;
+    }
+
+    &__filter{  
+        border-bottom: 2px solid #3a83f6;
+        display: flex;
+        align-items: center;
+        
+        @include phone{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__view{
+        margin-top: 16px;
+
+        .ant-table-cell{
+            font-size: 11px !important;
+        }
+    }
+
+    &__pagination{
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
